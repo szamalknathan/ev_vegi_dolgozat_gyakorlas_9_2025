@@ -1,9 +1,30 @@
 nav{
     background-color: #10b981;
     padding: 1rem;
-    margin: 2rem;
+    margin-bottom: 2rem;
 }
 
-.link a{
+ a{
+    color: white;  
+    background-color: #059669;
+    text-decoration: none;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0fdf4;
+    color: #1a3e2e;;
+}
+
+h1{
+    text-align: center;
+    background-color: #10b981;
     
 }
+
