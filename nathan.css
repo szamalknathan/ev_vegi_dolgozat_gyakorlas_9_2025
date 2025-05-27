@@ -1,0 +1,110 @@
+/* Általános stílusok az oldalhoz */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0fdf4;
+  color: #1a3e2e;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigáció */
+nav {
+  background-color: #10b981;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Navigációs linkek */
+nav a {
+  color: white;
+  background-color: #059669;
+  text-decoration: none;
+  padding: 0.75em 1.5em;
+  margin: 0 0.5em;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #047857;
+}
+
+/* Főcím */
+h1 {
+  text-align: center;
+  background-color: #bbf7d0;
+  color: white;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  font-size: 3em;
+}
+
+/* Cikk tartalma */
+article {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+/* Tartalmi szakaszok */
+section {
+  background-color: #e6fef1;
+  border-left: 8px solid #10b981;
+  padding: 1em;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);
+}
+
+/* Szöveg rácsos elrendezése */
+.szoveg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+/* Másodszintű címsor */
+h2 {
+  color: #065f46;
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+/* Bekezdések a .szoveg osztályban */
+.szoveg p {
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+/* Képek a .szoveg osztályban */
+.szoveg img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Reszponzivitás 600px alatt */
+@media (max-width: 600px) {
+  body {
+    font-size: 1.1em;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  .szoveg {
+    grid-template-columns: 1fr;
+  }
+
+  .szoveg img {
+    order: 1; /* biztosítja, hogy a kép a szöveg után jelenjen meg */
+  }
+}
