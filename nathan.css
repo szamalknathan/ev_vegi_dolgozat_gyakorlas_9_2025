@@ -1,20 +1,17 @@
-/* Általános stílusok az oldalhoz */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f0fdf4;
   color: #1a3e2e;
-  margin: 0;
-  padding: 0;
 }
 
-/* Navigáció */
+/* A navigáció */
 nav {
   background-color: #10b981;
   padding: 1rem;
   margin-bottom: 2rem;
 }
 
-/* Navigációs linkek */
+/* a navigáció linkjei */
 nav a {
   color: white;
   background-color: #059669;
@@ -23,31 +20,30 @@ nav a {
   margin: 0 0.5em;
   border-radius: 5px;
   font-weight: bold;
-  display: inline-block;
 }
 
 nav a:hover {
   background-color: #047857;
 }
 
-/* Főcím */
+/* Az első szintű címsor (általában főcím) stílusa */
 h1 {
   text-align: center;
-  background-color: #bbf7d0;
+  background-color: lightgreen;
   color: white;
   padding: 1.5em;
   margin-bottom: 2em;
   font-size: 3em;
 }
 
-/* Cikk tartalma */
+/* A cikk (fő tartalmi blokk) stílusa */
 article {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 1em;
 }
 
-/* Tartalmi szakaszok */
+/* Egy-egy szakasz formázása */
 section {
   background-color: #e6fef1;
   border-left: 8px solid #10b981;
@@ -57,27 +53,27 @@ section {
   box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);
 }
 
-/* Szöveg rácsos elrendezése */
+/* A .szoveg osztályú konténer rácsos elrendezése */
 .szoveg {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
 }
 
-/* Másodszintű címsor */
+/* Másodszintű címsor (alcím) stílusa */
 h2 {
   color: #065f46;
   margin-top: 0;
   font-size: 1.8rem;
 }
 
-/* Bekezdések a .szoveg osztályban */
+/* A .szoveg osztályon belüli bekezdések */
 .szoveg p {
   margin-bottom: 1em;
   text-align: justify;
 }
 
-/* Képek a .szoveg osztályban */
+/* A .szoveg osztályon belüli képek */
 .szoveg img {
   width: 100%;
   border-radius: 8px;
@@ -85,10 +81,10 @@ h2 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Reszponzivitás 600px alatt */
+/* Reszponzivitás */
 @media (max-width: 600px) {
   body {
-    font-size: 1.1em;
+    font-size: larger;
   }
 
   article {
@@ -105,6 +101,6 @@ h2 {
   }
 
   .szoveg img {
-    order: 1; /* biztosítja, hogy a kép a szöveg után jelenjen meg */
+    order: 1;
   }
 }
