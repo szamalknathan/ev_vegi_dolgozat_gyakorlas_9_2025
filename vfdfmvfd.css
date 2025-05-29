@@ -1,0 +1,103 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0fdf4;
+  color: #1a3e2e;
+}
+
+nav {
+  background-color: #10b981;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+nav a {
+  color: white; /* fehér szöveg */
+  background-color: #059669; /* zöld háttér */
+  text-decoration: none; /* nincs aláhúzás */
+  padding: 0.75em 1.5em; /* belső margó felül-alul és balra-jobbra */
+  margin: 0 0.5em; /* külső margó balra és jobbra */
+  border-radius: 5px; /* lekerekített sarkok */
+  font-weight: bold; /* félkövér betű */
+  display: inline-block; /* hogy a padding jól működjön */
+  transition: background-color 0.3s ease; /* sima váltás a háttérszínnél */
+}
+
+nav a:hover {
+  background-color: #047857; /* sötétebb zöld, ha az egér fölé megy */
+}
+
+h1 {
+  text-align: center; /* középre igazítás */
+  background-color: #90ee90; /* világoszöld háttér */
+  color: white; /* fehér szöveg */
+  padding: 1.5em; /* belső margó minden oldalra */
+  margin-bottom: 2em; /* alsó margó */
+  font-size: 3em; /* nagy betűméret */
+}
+
+article {
+  max-width: 900px; /* maximum szélesség */
+  margin: 0 auto; /* automatikus középre igazítás */
+  padding: 0 1em; /* belső margó balra és jobbra */
+}
+
+section {
+  background-color: #e6fef1;            /* világoszöld háttér */
+  border-left: 6px solid #10b981;       /* vastag zöld bal oldali sáv */
+  padding: 1em;                         /* belső margó minden oldalon */
+  margin-bottom: 2em;                   /* alsó margó */
+  border-radius: 8px;                   /* lekerekített sarkok */
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.1); /* finom zöldes árnyék */
+}
+
+.szoveg {
+  display: grid;               /* rácsos elrendezés */
+  grid-template-columns: 1fr 1fr; /* két egyenlő szélességű oszlop */
+  gap: 10px;                  /* 10 pixel hézag az oszlopok és sorok között */
+}
+
+h2 {
+  color: #065f46;       /* sötétzöld szöveg */
+  margin-top: 0;        /* nincs felső margó */
+  font-size: 1.8rem;    /* kicsit nagyobb betűméret */
+}
+
+.szoveg p {
+  margin-bottom: 1em;      /* alsó margó */
+  text-align: justify;     /* sorkizárt szöveg */
+}
+
+.szoveg img {
+  width: 100%;                           /* teljes szélesség */
+  border-radius: 8px;                    /* lekerekített sarkok */
+  margin-top: 1rem;                      /* felső margó */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* finom árnyék */
+}
+
+@media (max-width: 600px) {
+  body {
+    width: 100%;           /* az oldal teljes szélességű lesz */
+    font-size: 1.2rem;     /* nagyobb betűméret */
+  }
+
+  nav {
+    padding: 1rem;
+  }
+
+  nav a {
+    display: block;        /* menüpontok egymás alá kerülnek */
+    margin: 0.5em 0;       /* kis margó fent és lent */
+    width: 100%;           /* linkek kitöltik a szélességet */
+  }
+
+  .szoveg {
+    display: block;        /* rácsos elrendezés helyett sima blokk */
+  }
+
+  .szoveg img {
+    display: block;        /* képek blokk elemként viselkednek */
+    width: 100%;           /* kép teljes szélesség */
+    margin-top: 1rem;      /* marad a felső margó */
+  }
+}
+
